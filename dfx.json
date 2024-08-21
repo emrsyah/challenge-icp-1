@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "demo-hacker-house-backend": {
+      "main": "src/demo-hacker-house-backend/main.mo",
+      "type": "motoko"
+    },
+    "demo-hacker-house-frontend": {
+      "dependencies": [
+        "demo-hacker-house-backend"
+      ],
+      "source": [
+        "src/demo-hacker-house-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "demo-hacker-house-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
